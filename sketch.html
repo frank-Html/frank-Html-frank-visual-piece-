@@ -1,0 +1,35 @@
+<html>
+  
+  <head>
+  
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+  
+  </head>
+  <body>
+
+  	<script>
+
+  		var h = 20;
+  		var w = 20;
+  		function setup() {
+  			createCanvas(1000,500);
+  		}
+
+  		function draw(){
+        stroke('#ee4131');
+  			fill('#ef4012');
+  			ellipse(200,200,50,50);
+
+  			if (mouseIsPressed) {
+  				fill('#12d3ef');
+  			}
+  			else {
+  				fill('#f3160f');
+  			}
+  			stroke(0);
+  			ellipse(mouseX,mouseY,h,w);
+  		}
+</script>
+</body>
+
+</html>
